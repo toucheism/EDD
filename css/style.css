@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	background-color: white;
+}
+
+header{
+
+border-bottom: 2px solid lightblue;
+}
+header h1{
+   /*-webkit-text-fill-color: gold;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   font-size: 55px;
+   letter-spacing: 1em;*/
+
+}
+
+header p{
+	font-size: 24px;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.container{
+background-image: url(../images/cover.jpg);
+background-size: cover;
+
+border-bottom: 2px solid lightblue;
+}
+
+
+.title{
+color: white;
+font-size: 32px;
+}
+
+/*.nav-btn{
+
+}*/
+
+.content{
+	/*border: 1px solid red;*/
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 210px;
+	color: white;
+}
+.mood{
+	font-size: 32px;
+	outline: blue;
+}
+.edd{
+
+}
+
+.results{
+height: 60px;
+background-color: clear;
+width: 100%;
+margin: auto;
+padding: 10px;
+border-bottom: 2px solid lightblue;
+border-top: 2px solid lightblue;
+}
+
+.mid-section{
+margin: auto;
+padding: 5px;
+text-align: center;
+}
+
+.listing{
+border-right: 2px solid lightblue;
+border-left: 2px solid lightblue;
+width: 32%;
+height: 200px;
+display: inline-block;
+
+}
+
+.footer{
+	background-color: lightblue;
+	height: 100px;
+}
+
+/*useful css*/
+/*.spacing{
+	margin: 10px;
+}*/
