@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 
 }
 body{
@@ -12,6 +12,9 @@ body{
 header{
 
 border-bottom: 2px solid lightblue;
+display: block;
+
+
 }
 header h1{
    /*-webkit-text-fill-color: gold;
@@ -19,17 +22,43 @@ header h1{
    -webkit-text-stroke-color: black;
    font-size: 55px;
    letter-spacing: 1em;*/
+   display: inline-block;
+   border-right: 2px solid black;
+   padding-right: 5px;
+  }
 
+
+header h2{
+
+	display: inline-block;
+	/*color: silver;*/
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
-header p{
-	font-size: 24px;
-}
+/*how it works */
+.how-it-works-link{
 
-.heyhey{
-	font-size: 50px;
+	display: block;
+	width: auto;
+	background-color: gray;
+	border-radius: 10px;
+	border: 1px solid white;
+	margin: 0 auto;
+	margin-top: 2px;
+	padding: 5px;
 	color: yellow;
+	cursor: pointer;
+	text-align: center;
+
 }
+/*how it works hover effects*/
+.how-it-works-link:hover{
+	background-color: green;
+	text-transform: uppercase;
+}
+
 
 /* Clear fix hack */
 .clearfix:after {
@@ -51,12 +80,32 @@ border-bottom: 2px solid lightblue;
 
 .title{
 color: white;
-
 }
 
-/*.nav-btn{
+.how-it-works-popup{
+	background-color: rgba(255, 255, 255, .5);
+	margin: 0 auto;
+	width: auto;
+	padding: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 10px;
+}
 
-}*/
+.welcome{
+	color: magenta;
+}
+.x{
+	float: right ;
+	font-size: 24px;
+	color: gray;
+	margin: 5px;
+	padding: 5px;
+}
+.x:hover{
+	color: red;
+	/*-webkit-text-transform: rotate(-10deg);*/
+}
 
 .content{
 	/*border: 1px solid red;*/
@@ -67,28 +116,7 @@ color: white;
 	/*border-bottom: 2px solid lightblue;*/
 }
 
-.questions{
-	margin-top: 2%;
-	text-align: center;
-}
-.q1{
-	font-size: 32px;
-	border-radius: 20px;
-	padding: 10px;
-	background-color: gray;
-	opacity: .5;
-	margin: 0 0 0 10%;
 
-}
-.q2{
-	font-size: 80px;
-
-	/*background-color: gray;*/
-}
-
-/*.edd-form{
-	margin: 0 auto;
-}*/
 
 /*Container for mood-input*/
 .mood-div{
@@ -98,30 +126,9 @@ width: 100%;
 margin-top: 2%;
 padding: 10px;
 padding-bottom: 10%;
-/*text-align: center;*/
+
 }
 
-/*form class edd*/
-/*.edd-input{
-width: 45%;
-height: 50px;
-border-radius: 10px;
-text-align: center;
-font-size: 20px;
-}*/
-
-/*.edd-btn{
-width: 15%;
-height: 50px;
-border-radius: 10px;
-border: 2px solid #cdd0d7;(metalic silver)
-text-align: center;
-font-size: 20px;
-margin-left: 5px;
-color: white;
-background-color: gold;
-cursor: pointer;
-}*/
 
 /*mid section */
 .mid-section{
@@ -129,14 +136,17 @@ margin: auto;
 padding: 10px;
 }
 
-.today{ 		/*eat section*/
+.section{ 		/*eat section*/
 	display: block;
-	border-bottom: 2px solid lightblue;
+	background-color: rgba( 255, 255, 255, .5);
+	border-radius: 10px;
+	/*border-bottom: 2px dotted lightblue;*/
 	margin-bottom: 50px;
+
 
 }
 
-.eat-today-img{
+.edd-img-div{
 	display: inline-block;
 	margin: 0 30% 0 0;
 }
@@ -149,6 +159,7 @@ padding: 10px;
 	font-size: 24px;
 	color: gold;
 
+
 	/*margin-left: -50px;
 	transform: rotate(-90deg);
 	transform-origin: right bottom 0;*/
@@ -158,23 +169,30 @@ padding: 10px;
 
 .details{
 	display: inline-block;
-	border-left: 13px solid #ffffff;
+	border-left: 15px solid #ffffff;
 	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #ffffff;
+	/*margin-top: 25px;*/
 	color: #fff;
 	background-color: rgba(	178, 218,234, .5) ;/*aka #b2daea*/
 	padding: 0 50px;
 	width: 40%;
-	height: 200px;
+	height: 254px;
 	border-radius: 10px;
 	text-align: left;
 	float: right;
 }
 
 /*labels*/
+.detail-style{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10px;
+	padding: 5px;
+}
 .name{
 	font-size: 30px;
-	color: #ffffff;
+	color: #000000;
+	font-weight: 800;
 }
 
 .address{
@@ -184,14 +202,24 @@ padding: 10px;
 .price{
 	font-size: 20px;
 	margin-top: 5px;
+
 }
 
-.listing{
+.share{
+	font-size: 50px;
+	margin: 0 5px;
+	text-align: center;
+}
+.email{
+
+}
+
+.img-style{
 border-right: 2px solid lightblue;
 border-left: 2px solid lightblue;
 margin: 0 20px;
-width: 250px;
-height: 250px;
+width: 150px;
+height: 150px;
 display: inline-block;
 border-radius: 100%;
 background: rgba(255, 255, 255, .5);
@@ -206,5 +234,24 @@ cursor: pointer;
 	border-top: 1px solid lightblue;
 	margin-top: 15px;
 	padding-bottom: 5px;
+
+}
+
+/*Desktop view media Query*/
+
+@media screen and (min-width: 480px) {
+    div {
+        background-color: lightgreen;
+    }
+    .how-it-works-popup{
+	font-size: 14px;
+	}
+
+	.img-style{
+	width: 250px;
+	height: 250px;
+	}
+
+
 
 }
