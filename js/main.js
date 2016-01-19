@@ -1,8 +1,8 @@
 $(document).ready();
 // notes
-	// tico shortlink google: https://goo.gl/maps/1M35jSfpnKN2
 	//barcelona shortlink google: https://goo.gl/maps/eAfmfsZrbU32
 	//alero shortlink: https://goo.gl/maps/x484Gaw72iq
+	// tico shortlink google: https://goo.gl/maps/1M35jSfpnKN2
 	//theHeights shortlink: https://goo.gl/maps/GciFHzY979N2
 	//thaiXing: https://goo.gl/maps/QgVCqUTxtaA2
 
@@ -36,11 +36,11 @@ $('#eat-img-id').click(function eats(){
 	eatHere.hide()
 	eatHere.animate({width: 'toggle' });
 
-	var barcelona = ['images/barcelona.jpg','Barcelona', '14th St. NW', '$$ - moderate']
-	var alero = ['images/alero.jpg', 'Alero', '1301 U st. N.W D.C', '$$ - moderate']
-	var tico = ['images/tico.jpg', 'Tico', '1926 14th St NW, Washington, DC 20009', '$$$ - expensive']
-	var theHeights = ['images/theHeights.jpg', 'The Heights', '3115 14th St NW, Washington, DC 20010', '$$$ - expensive']
-	var thaiXing = ['images/thaiXing.jpg', 'Thai Xing', '515 Florida Ave NW, Washington, DC 20001', '$$ - moderate']
+	var barcelona = ['images/barcelona.jpg','Barcelona', '14th St. NW', '$$ - moderate', 'www.barcelonawinebar.com', 'https://goo.gl/maps/eAfmfsZrbU32' ]
+	var alero = ['images/alero.jpg', 'Alero', '1301 U st. N.W D.C', '$$ - moderate', 'www.alerorestaurant.com', 'https://goo.gl/maps/x484Gaw72iq']
+	var tico = ['images/tico.jpg', 'Tico', '1926 14th St NW, Washington, DC 20009', '$$$ - expensive', 'www.ticodc.com', 'https://goo.gl/maps/1M35jSfpnKN2']
+	var theHeights = ['images/theHeights.jpg', 'The Heights', '3115 14th St NW, Washington, DC 20010', '$$$ - expensive', 'www.theheightsdc.com', 'https://goo.gl/maps/GciFHzY979N2']
+	var thaiXing = ['images/thaiXing.jpg', 'Thai Xing', '515 Florida Ave NW, Washington, DC 20001', '$$ - moderate', 'www.thaix-ing.com', 'https://goo.gl/maps/QgVCqUTxtaA2']
 
 	var eat = [barcelona, alero, tico, theHeights, thaiXing]
 
@@ -51,6 +51,18 @@ $('#eat-img-id').click(function eats(){
 	$('#eatNameId').html(todaysPlace[1]); //note: .className+='eyhey'
 	$('#eatAddressId').html(todaysPlace[2]);
 	$('#eatPriceId').html(todaysPlace[3]);
+
+	var eatNameId = $('#eatNameId');
+	var eatAddressId = $('#eatAddressId');
+
+		eatNameId.click(function viewListing(){
+		window.open('http://' + todaysPlace[4],'_blank');
+		// document.location.reload(todaysPlace[4])
+	})
+		eatAddressId.click(function viewOnMap(){
+			window.open(todaysPlace[5], '_blank');
+		})
+
 
 })
 
@@ -125,3 +137,4 @@ $('#dance-img-id').click(function dance(){
 	$('#dancePriceId').html(todaysPlace[3]);
 
 })
+
