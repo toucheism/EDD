@@ -162,11 +162,13 @@ padding: 5px;
 	color: #000000;
 	font-weight: 800;
 	margin: 1px 0 ;
+	cursor: pointer;
 }
 
 .address{
 	font-size: 10px;
 	margin: 1px 0 ;
+	cursor: pointer;
 }
 
 .price{
@@ -262,13 +264,11 @@ cursor: pointer;
 	font-size: 30px;
 	color: #000000;
 	font-weight: 800;
-	cursor: pointer;
 }
 
 
 .address{
 	font-size: 24px;
-	cursor: pointer;
 }
 
 .price{
@@ -277,10 +277,5 @@ cursor: pointer;
 
 }
 
-.share{
-	font-size: 50px;
-	margin: 0 5px;
-	text-align: center;
-}
 
 }
