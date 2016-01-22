@@ -36,7 +36,7 @@ $('#eat-img-id').click(function eats(){
 	eatHere.hide()
 	eatHere.animate({width: 'toggle' });
 
-	var barcelona = ['images/barcelona.jpg','Barcelona', '1622 14th St NW, Washington, DC 20009', '$$ - moderate', 'www.barcelonawinebar.com', 'https://goo.gl/maps/eAfmfsZrbU32' ]
+	var barcelona = ['images/Barcelona.jpg','Barcelona', '1622 14th St NW, Washington, DC 20009', '$$ - moderate', 'www.barcelonawinebar.com', 'https://goo.gl/maps/eAfmfsZrbU32' ]
 	var alero = ['images/alero.jpg', 'Alero', '1301 U st. N.W D.C', '$$ - moderate', 'www.alerorestaurant.com', 'https://goo.gl/maps/x484Gaw72iq']
 	var tico = ['images/tico.jpg', 'Tico', '1926 14th St NW, Washington, DC 20009', '$$$ - expensive', 'www.ticodc.com', 'https://goo.gl/maps/1M35jSfpnKN2']
 	var theHeights = ['images/theHeights.jpg', 'The Heights', '3115 14th St NW, Washington, DC 20010', '$$$ - expensive', 'www.theheightsdc.com', 'https://goo.gl/maps/GciFHzY979N2']
